@@ -39,7 +39,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: github-actions-artifact
-          path: '${{ github.workspace }}/target/*.jar'
+          path: staging
           
       - name: Step 6 - Deploy to CF
         uses: guerric-p/cf-cli-action@master
